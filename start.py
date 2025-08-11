@@ -1,4 +1,4 @@
-
+print("Рестарт бота через Railway")
 import asyncio
 import logging
 import os
@@ -9,7 +9,7 @@ from aiogram.utils.markdown import hbold
 from dotenv import load_dotenv
 
 load_dotenv()
-BOT_TOKEN = os.getenv("BOT_TOKEN")
+BOT_TOKEN = "8058008956:AAGtm2NhagRqwSHzTANVGrWM7XNITnmIMlM"
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s | %(levelname)s | %(name)s | %(message)s")
 
