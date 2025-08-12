@@ -1,20 +1,9 @@
-# MercedesScanMinskBot — минимальный старт для Railway (aiogram v3)
+# MercedesScanMinskBot — финал с авто-привязкой админа
 
-## Что внутри
-- `app/main.py` — запуск бота, проверка токена, поллинг
-- `app/handlers/basic.py` — `/start` + эхо и простая клавиатура
-- `app/handlers/__init__.py` — сборка роутеров
-- `requirements.txt` — зависимости
+## Переменные в Railway
+- BOT_TOKEN — обязательно
+- (опц.) ADMIN_CHAT_ID — если знаешь числовой chat_id
+- (опц.) ADMIN_USERNAME — по умолчанию u_468345698
 
-## Быстрый деплой на Railway
-1. Создай новый проект в Railway и подключи репозиторий **или** загрузи ZIP.
-2. В **Settings → Variables** добавь переменную: `BOT_TOKEN` = `<твой токен из @BotFather>`
-3. Убедись, что команда запуска: `python -m app.main` (если нужно — задай в Deploy settings).
-4. Перезапусти деплой. В логах увидишь:
-   - `✅ Bot OK: @...`
-   - `▶️ Старт поллинга…`
-5. Напиши боту `/start` — ответит и покажет клавиатуру.
-
-## Дальше
-Добавляй свои обработчики в `app/handlers/` и включай их в `__init__.py` через
-`router.include_router(...)`.
+## Команда запуска
+python -m приложение.main
