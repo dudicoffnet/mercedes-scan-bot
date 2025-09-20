@@ -1,2 +1,1 @@
-httpx
-reportlab
+aiogram==3.12.0
